@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="Container">
+        <div id="display">
+            <div class="operandos">
+                <p id="Hora">00:00</p>
+                <p id="Operando"></p>
+
+            </div>
+            <h1 id="resultado">r</h1>
+
+        </div>
+        <div id="keyboard">
+            <span id="1" onclick="NovoNumeroAdicionado(1)">1</span>
+            <span id="2"onclick="NovoNumeroAdicionado(2)">2</span>
+            <span id="3"onclick="NovoNumeroAdicionado(3)">3</span>
+            <span id="/"onclick="DistinguirOperandos(), EscolherOperacao('dividir') ">/</span>
+            <span id="apagar"onclick="Apagar()"><</span>
+            <span id="4"onclick="NovoNumeroAdicionado(4)">4</span>
+            <span id="5"onclick="NovoNumeroAdicionado(5)">5</span>
+            <span id="6"onclick="NovoNumeroAdicionado(6)">6</span>
+            <span id="*"onclick="DistinguirOperandos(), EscolherOperacao('multiplicar') ">x</span>
+            <span id="Clear">C</span>
+            <span id="7"onclick="NovoNumeroAdicionado(7)">7</span>
+            <span id="8"onclick="NovoNumeroAdicionado(8)">8</span>
+            <span id="9"onclick="NovoNumeroAdicionado(9)">9</span>
+            <span id="-"onclick="DistinguirOperandos(), EscolherOperacao('subtrair') ">-</span>
+            <span id="igual" onclick="DistinguirOperandos(), igual()">=</span>
+            <span id="ponto" onclick="NovoNumeroAdicionado('.')">.</span>
+            <span id="0"onclick="NovoNumeroAdicionado(0)">0</span>
+            <span id="+"onclick="DistinguirOperandos(), EscolherOperacao('somar') ">+</span>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>
